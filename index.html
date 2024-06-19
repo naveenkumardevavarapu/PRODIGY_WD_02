@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Naveen kumar Devavarapu</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+            <p class="text-lg">I am an passionate web developer in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript, and modern frameworks like React js</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold mb-4">Online Art gallery</h3>
+                <p class="text-lg">Created a fully responsive website for a local business using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold mb-4">E-commerce Platform</h3>
+                <p class="text-lg">Developed an e-commerce platform with React and Node.js, featuring product listings, shopping cart, and payment gateway integration.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold mb-4">Personal Blog</h3>
+                <p class="text-lg">Built a personal blog using Gatsby.js, with Markdown support and a content management system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+            <form id="contact-form">
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 w-full rounded-md border-gray-300" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full rounded-md border-gray-300" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full rounded-md border-gray-300" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Me -->
+            <div class="text-center">
+                <h3 class="text-lg font-semibold mb-4">About Me</h3>
+                <p class="text-sm">I am a passionate web developer in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center">
+                <h3 class="text-lg font-semibold mb-4">Social Media</h3>
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#" target="_blank" class="text-sm hover:text-gray-300">Twitter</a></li>
+                    <li><a href="#" target="_blank" class="text-sm hover:text-gray-300">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" class="text-sm hover:text-gray-300">GitHub</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Me -->
+            <div class="text-center">
+                <h3 class="text-lg font-semibold mb-4">Contact Me</h3>
+                <p class="text-sm">Email: 123@gmail.com</p>
+                <p class="text-sm">Phone: 123-456-7890</p>
+            </div>
+        </div>
+        <div class="container mx-auto mt-8 text-center">
+            <p>&copy; 2024 Web Developer Portfolio</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
